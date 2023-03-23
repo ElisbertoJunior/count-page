@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ccc;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(13,13,82);
+  background: linear-gradient(90deg, rgba(13,13,82,1) 0%, rgba(0,0,0,1) 29%, rgba(9,14,56,1) 87%, rgba(0,0,0,1) 100%);
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+
+  &__title {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  &__hero {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+
+    &__count {
+      padding-top: 100px;
+      width: 50%;
+
+
+      h2 {
+        font-size: 40px;
+      }
+
+      table {
+        width: 100%;
+        margin: 20px 0;
+
+        th {
+          border-bottom: 2px solid #ccc;
+          padding: 16px;
+          font-size: 44px;
+          font-weight: bold;
+        }
+
+        tbody {
+
+          td {
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            padding: 16px 0;
+              
+          }
+        }
+      }
+    }
+
+    &__img {
+      height: 550px;
+    }
+  }
+
+
+}
