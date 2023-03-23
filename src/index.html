@@ -4,18 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/main.scss">
   <title>ElisbertoJR - Contagem Regressiva</title>
 </head>
 <body>
   <main class="page">
-    <div class="page__title">
-      <h1>Contagem regressiva pare meu aniversario</h1>
+    <div data-aos="fade-down" class="page__title">
+      <h1>
+        <img src="./images/EJRDEV.png" alt="">
+      </h1>
+      <p>Olá sou Elisberto Junior!</p>
+      <p>Data do Niver: 14/03</p>
+      <h2>Estamos em contagem regressiva para o meu aniversário.</h2>
     </div>
     <div class="page__hero">
-      <div class="page__hero__count">
+      <div data-aos="fade-right" class="page__hero__count">
         <h2>Faltam apenas...</h2>
-        <table cellspacing="0">
+        <table  cellspacing="0">
          <thead>
             <tr>
               <th>Dias</th>
@@ -34,10 +40,24 @@
          </tbody>
         </table>
       </div>
-      <img class="page__hero__img" src="./images/Foto-banner.png" alt="">
+      <img data-aos="fade-left" class="page__hero__img" src="./images/Foto-banner.png" alt="Foto">
     </div>
+
+    <section class="about-me">
+      <img data-aos="fade-up" height="500" src="https://site-portifolio-five.vercel.app/assets/images/perfil(2).png" alt="">
+      <div class="about-me__text">
+        <h2 data-aos="fade-left">Sobre mim</h2>
+        <p data-aos="fade-right">
+          Desenvolvedor de Software, iniciando no desenvolvimento em 2021, me considero entusiasta em novas tecnologias e adquirindo conhecimento dia após dia. Meu foco de desenvolvimento e com JavaScript, TypeScript, Angular dentre outras tecnologias que uso no meu dia a dia.
+          <br>
+          <br>
+          Sou ágil e consistente em aprender qualquer tecnologia e alta adaptabilidade às mudanças, pronto para encarar qualquer desafio! Se eu pudesse me definir em 3 palavras, certamente seriam: focado, perseverante e esforçado!
+        </p>
+      </div>
+    </section>
   </main>
   
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
 </html>

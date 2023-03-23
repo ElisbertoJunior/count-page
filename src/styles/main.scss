@@ -14,57 +14,123 @@ body {
 .page {
   width: 100vw;
   height: 100vh;
+  text-align: center;
 
   &__title {
     text-align: center;
-    padding: 40px 0;
+    padding: 2.5rem 0;
+
+    
+    p {
+      padding: 1.25rem 0;
+    }
   }
 
   &__hero {
-    max-width: 1280px;
+    max-width: 1320px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 1.25rem;
     
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 1090px) {
+      display: block;
+      text-align: center;
+    }
+    
+    
+  
     &__count {
-      padding-top: 100px;
-      width: 50%;
+      padding-top: 6.25rem;
+      max-width: 31.25rem;
+      
+      
 
 
       h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
       }
 
       table {
-        width: 100%;
-        margin: 20px 0;
+        margin: 1.25rem 0;
 
         th {
           border-bottom: 2px solid #ccc;
-          padding: 16px;
-          font-size: 44px;
+          padding: 1rem;
+          font-size: 2.75rem;
           font-weight: bold;
+
+          @media (max-width: 768px) {
+            border-bottom: 2px solid #ccc;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+          
         }
 
         tbody {
 
           td {
             text-align: center;
-            font-size: 38px;
+            font-size: 2rem;
             font-weight: bold;
-            padding: 16px 0;
-              
+            padding: 1rem 0;
+         
           }
         }
       }
+
+      
     }
 
     &__img {
-      height: 550px;
+      text-align: center;
+      height: 500px;
+      width: 500px;
+
+      @media (max-width: 768px) {
+        height: 300px;
+        width: 300px;
+      }
     }
+
+   
   }
 
 
+}
+
+.about-me {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.25rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+
+  @media (max-width: 1090px) {
+    flex-direction: column;
+    text-align: center;
+
+  
+
+    img {
+      height: 400px;
+    }
+
+    p {
+      padding-right: 20px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+   
+  }
 }
